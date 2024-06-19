@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    /* border: 1px solid black; */
+    max-width: 31em;
+    display: flex;
+    border-radius: 1em;
+}
+.containerLeft{
+    border-radius: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background: linear-gradient(0deg, rgba(46,43,233,1) 41%, rgba(120,87,255,1) 100%);
+}
+.containerLeft #heading{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.containerLeft .innerCircle{
+    /* border: 1px solid black; */
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: rgb(36,33,202); */
+    background: linear-gradient(0deg, rgba(36, 33, 202, 0.137) 41%, rgba(78,33,202,1) 100%);
+}
+.containerLeft .innerCircle #mainNum{
+    font-size: 2.6em;
+    font-weight: 800;
+}
+.containerLeft .innerCircle #subNum{
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.containerLeft p{
+    text-align: center;
+    font-size: 0.9em;
+}
+.containerRight{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.containerRight .list{
+    background-color: rgba(0, 0, 0, 0.041);
+    width: 100%;
+    padding: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.4em;
+    margin: 0.3em 0;
+}
+.containerRight .list .listArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerRight .list .mainText{
+    padding: 0 0.4em;
+}
+.containerRight .list span{
+    font-weight: 600;
+}
+.containerRight button{
+    padding: 0.8em 0;
+    font-weight: 600;
+    margin: 0.3em 0;
+    border-radius: 0.4em;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+}
+.containerRight button:hover{
+    background: linear-gradient(0deg, rgb(46, 43, 233) 41%, rgb(121, 87, 255) 100%);
+}
+.box{
+    padding: 1.2em;
+}
+.reaction{
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    color: hsl(234, 85%, 45%);
+}
+.listNum{
+    color: rgba(0, 0, 0, 0.425);
+}
+.lightColor{
+    color: rgba(255, 255, 255, 0.479);
+}
+.attribution{
+    margin: 1em 0;
+}
+@media (max-width:500px){
+    .containerLeft #heading{
+        font-size: 1em;
+    }
+    .containerLeft .innerCircle{
+        /* border: 1px solid black; */
+        width: 7em;
+        height: 7em;
+    }
+    .containerLeft .innerCircle #mainNum{
+        font-size: 2em;
+    }
+    .containerLeft .innerCircle #subNum{
+        font-size: 0.6em;
+    }
+    .containerLeft p{
+        font-size: 0.9em;
+    }
+    .containerRight .list span img{
+        width: 1.2em;
+    }
+    .containerRight .list span{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:450px){
+    .attribution{
+        display: none;
+    }
+    .container{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .containerLeft{
+        width: 100%;
+        height: 40%;
+        border-radius: 0 0 1em 1em;
+    }
+    .containerRight{
+        width: 100%;
+        height: 60%;
+        justify-content: space-between;
+    }
+    .containerLeft #heading{
+        font-size: 1.2em;
+    }
+    .containerLeft .innerCircle{
+        width:9em;
+        height:9em;
+    }
+    .containerLeft .innerCircle #mainNum{
+        font-size: 3em;
+    }
+    .containerLeft .innerCircle #subNum{
+        font-size: 0.8em;
+    }
+    .containerLeft p{
+        font-size: 0.9em;
+    }
+    .containerRight .list span img{
+        width: 1.3em;
+    }
+    .containerRight .list span{
+        font-size: 1.2em;
+    }
+    .containerRight button{
+        font-size: 1.1em;
+    }
+}
+@media (max-width:300px){
+    .containerLeft #heading{
+        font-size: 1.2em;
+    }
+    .containerLeft .innerCircle{
+        width: 9em;
+        height: 9em;
+    }
+    .containerLeft .innerCircle #mainNum{
+        font-size: 3em;
+    }
+    .containerLeft .innerCircle #subNum{
+        font-size: 0.8em;
+    }
+    .containerLeft p{
+        font-size: 0.9em;
+    }
+    .containerRight .list span img{
+        width: 1em;
+    }
+    .containerRight .list span{
+        font-size: 1.1em;
+    }
+    .containerRight button{
+        font-size: 1em;
+    }
+}
+
+/* body{
+    color:#4e21ca;
+    color:#2421ca00;
+} */
